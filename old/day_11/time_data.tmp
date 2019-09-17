@@ -1,0 +1,28 @@
+   1000000    0.000000                                                     >Single value, integer assignment. {reps, time}
+   1000000    4.000000                                    >Single value, float (single precision) assignment. {reps, time}
+   1000000    4.000000                                    >Single value, float (double precision) assignment. {reps, time}
+   1000000    4.000000                                         >Single value, integer readout and assignment. {reps, time}
+   1000000    0.000000                        >Single value, float (single precision) readout and assignment. {reps, time}
+   1000000    0.000000                        >Single value, float (double precision) readout and assignment. {reps, time}
+   1000000    4.000000                                                       >Single value, integer addition. {reps, time}
+   1000000    0.000000                                      >Single value, float (single precision) addition. {reps, time}
+   1000000    4.000000                                      >Single value, float (double precision) addition. {reps, time}
+   1000000    0.000000                                                 >Single value, integer multiplication. {reps, time}
+   1000000    4.000000                                >Single value, float (single precision) multiplication. {reps, time}
+   1000000    0.000000                                >Single value, float (double precision) multiplication. {reps, time}
+      1000      1000    0.000000                                                              1D array assignment. {reps, dim, time}
+      1000      1000    0.424000                                                              2D array assignment. {reps, dim, time}
+      1000      1000    0.000000                                                  1D array readout and assignment. {reps, dim, time}
+      1000      1000    1.988000                                                  2D array readout and assignment. {reps, dim, time}
+      1000      1000    0.000000                                                                1D array addition. {reps, dim, time}
+      1000      1000    3.024000                                                                2D array addition. {reps, dim, time}
+      1000      1000    0.000000                                                          1D array multiplication. {reps, dim, time}
+      1000      1000    3.084000                                                          2D array multiplication. {reps, dim, time}
+                 1000   2.4000000000000909E-006   2.2854727686110257E-018 1D array assignment integer.
+               100000   1.6559999999999988E-004   2.1646096373673096E-018 1D array assignment (single)
+               100000   1.6680000000000010E-004   3.8180179504077042E-018 1d assignment real (double)
+               100000   1.6760000000000001E-004   4.3612032388229417E-018 1d array summation
+               100000   1.1679999999999993E-004   1.0654996850101295E-018 1d array multiplication
+                  500   5.0923999999999995E-003   4.7262541102988111E-017 NxN array multiplication (column->row)
+                  500   7.3160000000000022E-004   1.1480833644883502E-016 NxN array multiplication (row->column)
+                  500   3.2520000000000097E-004   2.6661615623591039E-016 NxN array multiplication (built-in)

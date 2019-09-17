@@ -1,0 +1,66 @@
+#plotting t_mean (average computation time) against n (dimension of matrix)
+
+set style line 5 lt 1 lw 3 ps 0.5 pt 5 lc rgb 'light-red'
+set style line 6 lt 1 lw 3 ps 0.5 pt 7 lc rgb 'dark-chartreuse'
+
+set term pdfcairo color size 4,3 enhanced dash font 'Deja Vu Sans, 10'
+
+#plot for assignment of values
+set output 'scaling_assignment.pdf'
+
+set title 'Scaling of assignment operation'
+set key top left
+set xlabel 'n'
+set xrange [0:1050]
+
+set ylabel 'runtime (ms)'
+set yrange [0:18]
+
+#actual plotting codes
+plot 'assign.dat' using 1:2:3 with yerrorbars ls 5 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 6 title 't_{mean,column}'
+     
+#plot for readout and assignment of values
+set output 'scaling_readout.pdf'
+
+set title 'Scaling of readout and assignment operation'
+set key top left
+set xlabel 'n'
+set xrange [0:1050]
+
+set ylabel 'runtime (ms)'
+set yrange [0:18]
+
+#actual plotting codes
+plot 'readout.dat' using 1:2:3 with yerrorbars ls 5 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 6 title 't_{mean,column}'
+     
+#plot for addition of matrices
+set output 'scaling_addition.pdf'
+
+set title 'Scaling of addition operation'
+set key top left
+set xlabel 'n'
+set xrange [0:1050]
+
+set ylabel 'runtime (ms)'
+set yrange [0:18]
+
+#actual plotting codes
+plot 'addition.dat' using 1:2:3 with yerrorbars ls 5 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 6 title 't_{mean,column}'
+     
+#plot for multiplication of matrices
+set output 'scaling_multiplication.pdf'
+
+set title 'Scaling of multiplication operation'
+set key top left
+set xlabel 'n'
+set xrange [0:1050]
+
+set ylabel 'runtime (ms)'
+set yrange [0:18]
+
+#actual plotting codes
+plot 'multiplication.dat' using 1:2:3 with yerrorbars ls 5 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 6 title 't_{mean,column}'

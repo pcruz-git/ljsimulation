@@ -1,0 +1,704 @@
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.17001e+08       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 5989.57
+
+initial set of free parameter values
+
+a_ij            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 9.73488
+rel. change during last iteration : -1.04284e-12
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.715795
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.512362
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a_ij            = 0.000348133      +/- 2.672e-05    (7.676%)
+
+
+correlation matrix of the fit parameters:
+
+               a_ij   
+a_ij            1.000 
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn2_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.51666e+16       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.75219e+07
+
+initial set of free parameter values
+
+b_ij            = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 1.03435
+rel. change during last iteration : -6.44012e-16
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.233323
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0544394
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b_ij            = 4.60208e-08      +/- 1.098e-09    (2.386%)
+
+
+correlation matrix of the fit parameters:
+
+               b_ij   
+b_ij            1.000 
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: flogn_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 114.75            delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 3.63459
+
+initial set of free parameter values
+
+c_ij            = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 39.3618
+rel. change during last iteration : -1.08467e-09
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.43933
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.07167
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+c_ij            = 0.465828         +/- 0.08855      (19.01%)
+
+
+correlation matrix of the fit parameters:
+
+               c_ij   
+c_ij            1.000 
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fnlogn_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.07354e+10       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 23170.4
+
+initial set of free parameter values
+
+d_ij            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 7.85244
+rel. change during last iteration : -1.93559e-11
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.642874
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.413286
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+d_ij            = 9.09616e-05      +/- 6.204e-06    (6.821%)
+
+
+correlation matrix of the fit parameters:
+
+               d_ij   
+d_ij            1.000 
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.17455e+08       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 5989.57
+
+initial set of free parameter values
+
+a_ji            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0523693
+rel. change during last iteration : -1.93964e-10
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0525003
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00275628
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a_ji            = 3.12298e-05      +/- 1.96e-06     (6.276%)
+
+
+correlation matrix of the fit parameters:
+
+               a_ji   
+a_ji            1.000 
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn2_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.51666e+16       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.75219e+07
+
+initial set of free parameter values
+
+b_ji            = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.00122234
+rel. change during last iteration : -1.59657e-15
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00802084
+variance of residuals (reduced chisquare) = WSSR/ndf   : 6.43339e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b_ji            = 4.07746e-09      +/- 3.774e-11    (0.9256%)
+
+
+correlation matrix of the fit parameters:
+
+               b_ji   
+b_ji            1.000 
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: flogn_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 242.496           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 3.63459
+
+initial set of free parameter values
+
+c_ji            = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.274768
+rel. change during last iteration : -4.99245e-07
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.120256
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0144615
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+c_ji            = 0.042507         +/- 0.007398     (17.41%)
+
+
+correlation matrix of the fit parameters:
+
+               c_ji   
+c_ji            1.000 
+
+
+*******************************************************************************
+Fri Nov  3 18:59:25 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fnlogn_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.07372e+10       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 23170.4
+
+initial set of free parameter values
+
+d_ji            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0396445
+rel. change during last iteration : -3.83451e-09
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0456788
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00208655
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+d_ji            = 8.14602e-06      +/- 4.408e-07    (5.412%)
+
+
+correlation matrix of the fit parameters:
+
+               d_ji   
+d_ji            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.16996e+08       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 5989.57
+
+initial set of free parameter values
+
+a_ij            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 8.7208
+rel. change during last iteration : -1.1639e-12
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.677488
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.458989
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a_ij            = 0.000351466      +/- 2.529e-05    (7.196%)
+
+
+correlation matrix of the fit parameters:
+
+               a_ij   
+a_ij            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn2_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.51666e+16       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.75219e+07
+
+initial set of free parameter values
+
+b_ij            = 1
+
+The maximum lambda = 1.000000e+20 was exceeded. Fit stopped.
+final sum of squares of residuals : 0.675235
+rel. change during last iteration : 0
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.188517
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0355387
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b_ij            = 4.62651e-08      +/- 8.87e-10     (1.917%)
+
+
+correlation matrix of the fit parameters:
+
+               b_ij   
+b_ij            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: flogn_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 111.622           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 3.63459
+
+initial set of free parameter values
+
+c_ij            = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 38.2431
+rel. change during last iteration : -1.08663e-09
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.41873
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.0128
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+c_ij            = 0.472996         +/- 0.08728      (18.45%)
+
+
+correlation matrix of the fit parameters:
+
+               c_ij   
+c_ij            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:2
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fnlogn_ij(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.07354e+10       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 23170.4
+
+initial set of free parameter values
+
+d_ij            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 6.91102
+rel. change during last iteration : -2.1993e-11
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.603107
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.363738
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+d_ij            = 9.17774e-05      +/- 5.82e-06     (6.342%)
+
+
+correlation matrix of the fit parameters:
+
+               d_ij   
+d_ij            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 7.17462e+08       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 5989.57
+
+initial set of free parameter values
+
+a_ji            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.0336983
+rel. change during last iteration : -3.01435e-10
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0421141
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00177359
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+a_ji            = 2.66073e-05      +/- 1.572e-06    (5.909%)
+
+
+correlation matrix of the fit parameters:
+
+               a_ji   
+a_ji            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fn2_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 4.51666e+16       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 4.75219e+07
+
+initial set of free parameter values
+
+b_ji            = 1
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 4.53984e-05
+rel. change during last iteration : -2.86584e-14
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00154576
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.38939e-06
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+b_ji            = 3.46284e-09      +/- 7.273e-12    (0.21%)
+
+
+correlation matrix of the fit parameters:
+
+               b_ji   
+b_ji            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: flogn_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 245.538           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 3.63459
+
+initial set of free parameter values
+
+c_ji            = 1
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.192509
+rel. change during last iteration : -7.21764e-07
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.100658
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.010132
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+c_ji            = 0.0363521        +/- 0.006193     (17.04%)
+
+
+correlation matrix of the fit parameters:
+
+               c_ji   
+c_ji            1.000 
+
+
+*******************************************************************************
+Sun Nov  5 16:56:15 2017
+
+
+FIT:    data read from 'times.matmul.dat' using 1:3
+        format = x:z
+        x range restricted to [250.000 : 10250.0]
+        #datapoints = 20
+        residuals are weighted equally (unit weight)
+
+function used for fitting: fnlogn_ji(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 1.07372e+10       delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 23170.4
+
+initial set of free parameter values
+
+d_ji            = 1
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.024894
+rel. change during last iteration : -6.10659e-09
+
+degrees of freedom    (FIT_NDF)                        : 19
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0361968
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00131021
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+d_ji            = 6.93736e-06      +/- 3.493e-07    (5.035%)
+
+
+correlation matrix of the fit parameters:
+
+               d_ji   
+d_ji            1.000 

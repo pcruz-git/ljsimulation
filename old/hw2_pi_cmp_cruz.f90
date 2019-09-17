@@ -1,0 +1,46 @@
+
+
+real(8) function distance(xv,yv) result(res)
+    implicit none
+    real(8), intent(in):: xv, yv !dummy variables
+    res = sqrt(xv*xv + yv*yv)
+end function
+
+real(8) function f_points(circle,square) result(res)
+    implicit none
+    integer(8), intent(in):: circle, square
+    res = circle/(1.0*square)
+end function
+
+subroutine add_counter(cv) 
+    implicit none
+    integer(8), intent(inout):: cv
+    cv = cv + 1
+end subroutine
+
+    
+    
+
+program pi_sub_func
+    implicit none
+    real(8), dimension(1):: x, y, pi ! coordinates and pi
+    real(8), external:: distance, f_points ! from the origin 
+    integer(8):: i, counter_in, counter_tot ! iteration and # of points
+    !pseudo-random generator part
+    real(8), dimension(1):: p
+    integer, dimension(1):: seed
+    seed(1) = 12345
+    call random_seed ! initializes the "seed"?
+    counter_tot = 1000000 ! Total number of points to consider
+    counter_in = 0
+    do i=1, counter_tot
+        call random_number(p)
+        x(1) = p(1)
+        call random_number(p)
+        y(1) = p(1)
+        if (distance(x(1),y(1))<=1) call add_counter(counter_in) 
+        !condition for a point inside the circle
+    end do
+    pi = 4*f_points(counter_in,counter_tot)
+    print*, "The approximate value of pi is", pi
+end program pi_sub_func

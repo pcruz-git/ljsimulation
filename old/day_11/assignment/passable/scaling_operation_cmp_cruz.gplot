@@ -1,0 +1,173 @@
+#plotting t_mean (average computation time) against n (dimension of matrix)
+
+set style line 1 lt 1 lw 2 ps 0.5 pt 5 lc rgb 'light-pink'
+set style line 2 lt 1 lw 2 ps 0.5 pt 5 lc rgb 'light-blue'
+set style line 3 lt 1 lw 2 ps 0.5 pt 5 lc rgb 'gray'
+set style line 4 lt 2 lw 2 ps 0.5 pt 5 lc rgb 'gray'
+set style line 5 lt 3 lw 2 ps 0.5 pt 5 lc rgb 'gray'
+set style line 6 lt 4 lw 2 ps 0.5 pt 5 lc rgb 'gray'
+set style line 7 lt 1 lw 2 ps 0.5 pt 5 lc rgb 'red'
+set style line 8 lt 1 lw 2 ps 0.5 pt 4 lc rgb 'light-blue'
+set style line 9 lt 1 lw 2 ps 0.5 pt 4 lc rgb 'light-pink'
+set style line 10 lt 1 lw 2 ps 0.5 pt 4 lc rgb 'light-blue'
+set style line 11 lt 1 lw 2 ps 0.5 pt 5 lc rgb 'green'
+set style line 12 lt 1 lw 2 ps 0.5 pt 4 lc rgb 'green'
+set style line 13 lt 1 lw 2 ps 0.5 pt 5 lc rgb 'orange
+set style line 14 lt 1 lw 2 ps 0.5 pt 4 lc rgb 'orange'
+set style line 15 lt 1 lw 2 ps 0.5 pt 2 lc rgb 'gray'
+set style line 16 lt 2 lw 2 ps 0.5 pt 2 lc rgb 'gray'
+set style line 17 lt 3 lw 2 ps 0.5 pt 2 lc rgb 'gray'
+set style line 18 lt 4 lw 2 ps 0.5 pt 2 lc rgb 'gray'
+
+
+#output format
+set term pdfcairo color size 4,3 enhanced dash font 'Deja Vu Sans, 10'
+
+#----------------------------------------
+#PLOTS ALL OPERATION SUPERIMPOSED
+#formatting
+set output 'scaling_operations.pdf'
+set title 'Scaling of all operations'
+set key top left
+
+set xlabel 'n'
+set xrange[250:10050]
+set ylabel 'runtime(ms)'
+set yrange [0<*:]
+
+plot 'assign.dat' using 1:2:3 with yerrorbars ls 1 title 'assignment_{row}',\
+     'assign.dat' using 1:4:5 with yerrorbars ls 9 title 'assignment_{column}',\
+     'readout.dat' using 1:2:3 with yerrorbars ls 2 title 'readout_{row}',\
+     'readout.dat' using 1:4:5 with yerrorbars ls 10 title 'readout_{column}',\
+     'addition.dat' using 1:2:3 with yerrorbars ls 11 title 'addition_{row}',\
+     'addition.dat' using 1:4:5 with yerrorbars ls 12 title 'addition_{column}',\
+     'multiplication.dat' using 1:2:3 with yerrorbars ls 13 title 'multiplication_{row}',\
+     'multiplication.dat'using 1:4:5 with yerrorbars ls 14 title 'multiplication_{column}'
+
+#----------------------------------------
+#PLOTTING EACH OPERATION WITH FITTING
+#----------------------------------------
+
+#GLOBAL CODE FOR FITTING
+fn_row(x) = a_row*x
+fn2_row(x) = b_row*x**2
+fn_column(x) = a_column*x
+fn2_column(x) = b_column*x**2
+
+log2(x) = log(x)/log(2) #base 2 logarithm
+
+flog_row(x) = c_row*log2(x)
+fnlog_row(x) = d_row*x*log2(x)
+flog_column(x) = c_column*log2(x)
+fnlog_column(x) = d_column*x*log2(x)
+
+#ASSIGNMENT OF VALUES (SCALING)
+#formatting of pdf
+set output 'scaling_assignment.pdf'
+set title 'Scaling of assignment operation'
+set key top left
+
+set xlabel 'n'
+set xrange [250:10050]
+set ylabel 'runtime (ms)'
+set yrange [0<*:]
+
+#fitting of plots wrt to n (linear) and n^2 (quadratic)
+fit fn_row(x) 'assign.dat' using 1:2 via a_row 
+fit fn2_row(x) 'assign.dat' using 1:2 via b_row
+fit fn_column(x) 'assign.dat' using 1:4 via a_column
+fit fn2_column(x) 'assign.dat' using 1:4 via b_column
+
+#fitting of plots wrt to log(n) and nlog(n)
+fit flog_row(x) 'assign.dat' using 1:2 via c_row
+fit fnlog_row(x) 'assign.dat' using 1:2 via d_row
+fit flog_column(x) 'assign.dat' using 1:2 via c_column
+fit fnlog_column(x) 'assign.dat' using 1:2 via d_column
+
+#actual plotting codes
+plot 'assign.dat' using 1:2:3 with yerrorbars ls 1 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 2 title 't_{mean,column}',\
+     fn_row(x) with l ls 4 title 'n (row)',\
+     fn2_row(x) with l ls 7 title 'n^2 (row)',\
+     fn_column(x) with l ls 5 title 'n (column)',\
+     fn2_column(x) with l ls 8 title 'n^2 (column)',\
+
+     
+#----------------------------------------
+#READOUT AND ASSIGNMENT (SCALING)
+set output 'scaling_readout.pdf'
+
+set title 'Scaling of readout and assignment operation'
+set key top left
+set xlabel 'n'
+set xrange [250:10250]
+
+set ylabel 'runtime (ms)'
+set yrange [0<*:]
+
+#fitting of plots wrt to n (linear) and n^2 (quadratic)
+fit fn_row(x) 'readout.dat' using 1:2 via a_row 
+fit fn2_row(x) 'readout.dat' using 1:2 via b_row
+fit fn_column(x) 'readout.dat' using 1:4 via a_column
+fit fn2_column(x) 'readout.dat' using 1:4 via b_column
+
+#actual plotting codes
+plot 'readout.dat' using 1:2:3 with yerrorbars ls 1 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 2 title 't_{mean,column}',\
+     fn_row(x) with l ls 4 title 'n (row)',\
+     fn2_row(x) with l ls 7 title 'n^2 (row)',\
+     fn_column(x) with l ls 5 title 'n (column)',\
+     fn2_column(x) with l ls 8 title 'n^2 (column)'
+    
+     
+#----------------------------------------
+#ADDITION (SCALING)
+set output 'scaling_addition.pdf'
+
+set title 'Scaling of addition operation'
+set key top left
+set xlabel 'n'
+set xrange [250:10250]
+
+set ylabel 'runtime (ms)'
+set yrange [0<*:]
+
+#fitting of plots wrt to n (linear) and n^2 (quadratic)
+fit fn_row(x) 'addition.dat' using 1:2 via a_row 
+fit fn2_row(x) 'addition.dat' using 1:2 via b_row
+fit fn_column(x) 'addition.dat' using 1:4 via a_column
+fit fn2_column(x) 'addition.dat' using 1:4 via b_column
+
+#actual plotting codes
+plot 'addition.dat' using 1:2:3 with yerrorbars ls 1 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 2 title 't_{mean,column}',\
+     fn_row(x) with l ls 4 title 'n (row)',\
+     fn2_row(x) with l ls 7 title 'n^2 (row)',\
+     fn_column(x) with l ls 5 title 'n (column)',\
+     fn2_column(x) with l ls 8 title 'n^2 (column)'
+     
+#----------------------------------------
+#MULTIPLICATION (SCALING)
+set output 'scaling_multiplication.pdf'
+
+set title 'Scaling of multiplication operation'
+set key top left
+set xlabel 'n'
+set xrange [250:10250]
+
+set ylabel 'runtime (ms)'
+set yrange [0<*:]
+
+#fitting of plots wrt to n (linear) and n^2 (quadratic)
+fit fn_row(x) 'multiplication.dat' using 1:2 via a_row 
+fit fn2_row(x) 'multiplication.dat' using 1:2 via b_row
+fit fn_column(x) 'multiplication.dat' using 1:4 via a_column
+fit fn2_column(x) 'multiplication.dat' using 1:4 via b_column
+
+#actual plotting codes
+plot 'multiplication.dat' using 1:2:3 with yerrorbars ls 1 title 't_{mean,row}',\
+     '' using 1:4:5 with yerrorbars ls 2 title 't_{mean,column}',\
+     fn_row(x) with l ls 4 title 'n (row)',\
+     fn2_row(x) with l ls 7 title 'n^2 (row)',\
+     fn_column(x) with l ls 5 title 'n (column)',\
+     fn2_column(x) with l ls 8 title 'n^2 (column)'
